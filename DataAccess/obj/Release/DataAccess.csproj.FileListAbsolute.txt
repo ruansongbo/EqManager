@@ -1,0 +1,4 @@
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataAccess\bin\Release\DataAccess.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataAccess\bin\Release\DataAccess.pdb
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataAccess\obj\Release\DataAccess.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataAccess\obj\Release\DataAccess.pdb

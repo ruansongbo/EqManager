@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75A1B664-AC0C-4554-AAEB-A1E9DEB297E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Equipment_Manager</RootNamespace>
+    <AssemblyName>Equipment_Manager</AssemblyName>
+    <ManifestCertificateThumbprint>DF7BF4ADA984DCFFC8ABE0505BA381C6094142EC</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Equipment_Manager_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>深圳大学.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>C:\myProj\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="IrisSkin4, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=127be25a6db25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=6.4.4.4040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.DocViewer.Forms, Version=3.4.0.51040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Spire.DocViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.6.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=4.4.0.2040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing">
+      <HintPath>..\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBorrowReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrowReturn.Designer.cs">
+      <DependentUpon>frmBorrowReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFix.designer.cs">
+      <DependentUpon>frmFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixLook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixLook.designer.cs">
+      <DependentUpon>frmFixLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixReturn.designer.cs">
+      <DependentUpon>frmFixReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaintainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaintainer.Designer.cs">
+      <DependentUpon>frmMaintainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBasicData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBasicData.Designer.cs">
+      <DependentUpon>frmBasicData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEqUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEqUpdate.designer.cs">
+      <DependentUpon>frmEqUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT.cs" />
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="DocViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocViewer.designer.cs">
+      <DependentUpon>DocViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudit.Designer.cs">
+      <DependentUpon>frmAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmBarCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarCode.Designer.cs">
+      <DependentUpon>frmBarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEqAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEqAdd.designer.cs">
+      <DependentUpon>frmEqAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsBecomeOld.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBecomeOld.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsReportByDepart.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReportByDepart.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsReportByType.cs">
+      <DependentUpon>dsReportByType.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsReportByType.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReportByType.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEqUseing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEqUseing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseInfo.Designer.cs">
+      <DependentUpon>frmBaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrow.Designer.cs">
+      <DependentUpon>frmBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrowLook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrowLook.Designer.cs">
+      <DependentUpon>frmBorrowLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClearLook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClearLook.Designer.cs">
+      <DependentUpon>frmClearLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConpanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConpanyInfo.Designer.cs">
+      <DependentUpon>frmConpanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepart.Designer.cs">
+      <DependentUpon>frmDepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClear.Designer.cs">
+      <DependentUpon>frmClear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEqInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEqInfo.Designer.cs">
+      <DependentUpon>frmEqInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFlash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFlash.Designer.cs">
+      <DependentUpon>frmFlash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImport.Designer.cs">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeepPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeepPlace.Designer.cs">
+      <DependentUpon>frmKeepPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabel.Designer.cs">
+      <DependentUpon>frmLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmOneEqInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOneEqInfo.Designer.cs">
+      <DependentUpon>frmOneEqInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPowerSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPowerSet.Designer.cs">
+      <DependentUpon>frmPowerSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintOptions.designer.cs">
+      <DependentUpon>frmPrintOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemark.Designer.cs">
+      <DependentUpon>frmRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporter\frmReportBecomeOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporter\frmReportBecomeOld.Designer.cs">
+      <DependentUpon>frmReportBecomeOld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporter\frmReportEqUseing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporter\frmReportEqUseing.Designer.cs">
+      <DependentUpon>frmReportEqUseing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectItem.Designer.cs">
+      <DependentUpon>frmSelectItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServerSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServerSet.Designer.cs">
+      <DependentUpon>frmServerSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsysUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsysUser.Designer.cs">
+      <DependentUpon>frmsysUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTree.Designer.cs">
+      <DependentUpon>frmTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateSysUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateSysUserInfo.Designer.cs">
+      <DependentUpon>frmUpdateSysUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="imageDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZCGridButtonState.cs" />
+    <Compile Include="ZCGridColumnSortButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZCGridSortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZCGridSortForm.designer.cs">
+      <DependentUpon>ZCGridSortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZCGridSortHelper.cs" />
+    <EmbeddedResource Include="frmBorrowReturn.resx">
+      <DependentUpon>frmBorrowReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFix.resx">
+      <DependentUpon>frmFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixLook.resx">
+      <DependentUpon>frmFixLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixReturn.resx">
+      <DependentUpon>frmFixReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaintainer.resx">
+      <DependentUpon>frmMaintainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBasicData.resx">
+      <DependentUpon>frmBasicData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEqUpdate.resx">
+      <DependentUpon>frmEqUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocViewer.resx">
+      <DependentUpon>DocViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudit.resx">
+      <DependentUpon>frmAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarCode.resx">
+      <DependentUpon>frmBarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEqAdd.resx">
+      <DependentUpon>frmEqAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrowLook.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBorrowLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClearLook.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmClearLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConpanyInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConpanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDepart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClear.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmClear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEqInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEqInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFlash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFlash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImport.resx">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeepPlace.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKeepPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabel.resx">
+      <DependentUpon>frmLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOneEqInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOneEqInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPowerSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPowerSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintOptions.resx">
+      <DependentUpon>frmPrintOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemark.resx">
+      <DependentUpon>frmRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporter\frmReportBecomeOld.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReportBecomeOld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporter\frmReportEqUseing.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReportEqUseing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectItem.resx">
+      <DependentUpon>frmSelectItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServerSet.resx">
+      <DependentUpon>frmServerSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsysUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmsysUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTree.resx">
+      <DependentUpon>frmTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateSysUserInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUpdateSysUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reprter\ReportBecomeOld.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportBecomeOld.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reprter\ReportBorrowByDepart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportBorrowByDepart.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reprter\ReportByType.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportByType.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reprter\ReporterEqUseing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporterEqUseing.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ZCGridSortForm.resx">
+      <DependentUpon>ZCGridSortForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="dsBecomeOld.xsc">
+      <DependentUpon>dsBecomeOld.xsd</DependentUpon>
+    </None>
+    <None Include="dsBecomeOld.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBecomeOld.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsBecomeOld.xss">
+      <DependentUpon>dsBecomeOld.xsd</DependentUpon>
+    </None>
+    <None Include="dsReportByDepart.xsc">
+      <DependentUpon>dsReportByDepart.xsd</DependentUpon>
+    </None>
+    <None Include="dsReportByDepart.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReportByDepart.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsReportByDepart.xss">
+      <DependentUpon>dsReportByDepart.xsd</DependentUpon>
+    </None>
+    <None Include="dsReportByType.xsc">
+      <DependentUpon>dsReportByType.xsd</DependentUpon>
+    </None>
+    <None Include="dsReportByType.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReportByType.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsReportByType.xss">
+      <DependentUpon>dsReportByType.xsd</DependentUpon>
+    </None>
+    <None Include="dsEqUseing.xsc">
+      <DependentUpon>dsEqUseing.xsd</DependentUpon>
+    </None>
+    <None Include="dsEqUseing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEqUseing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsEqUseing.xss">
+      <DependentUpon>dsEqUseing.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reprter\ReportBecomeOld.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportBecomeOld.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reprter\ReportBorrowByDepart.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportBorrowByDepart.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reprter\ReportByType.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportByType.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reprter\ReporterEqUseing.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporterEqUseing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="untCommon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{10050C27-2BC0-48CD-91FE-3C86E3D2536A}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataBusiness\DataBusiness.csproj">
+      <Project>{16C2030E-B487-47F2-BE24-F5E6C0A1CD5E}</Project>
+      <Name>DataBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEntity\DataEntity.csproj">
+      <Project>{A17B9535-F480-4449-BA55-64C970F45355}</Project>
+      <Name>DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RedrawControl\RedrawControl.csproj">
+      <Project>{E6071275-ACE5-47C1-AD3A-0F9B3BA2B565}</Project>
+      <Name>RedrawControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\768c599026c96b712f76f77161fa3e4e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="深圳大学.ico" />
+    <None Include="Resources\3676.png" />
+    <None Include="Resources\AddPhoto.png" />
+    <None Include="Resources\DeletePhoto.png" />
+    <None Include="Resources\file_doc.ico" />
+    <None Include="Resources\file_jpg.ico" />
+    <None Include="Resources\file_mp3.ico" />
+    <None Include="Resources\file_mp4.ico" />
+    <None Include="Resources\file_other.ico" />
+    <None Include="Resources\file_pdf.ico" />
+    <None Include="Resources\file_png.ico" />
+    <None Include="Resources\file_ppt.ico" />
+    <None Include="Resources\file_xls.ico" />
+    <None Include="Resources\folder-add.png" />
+    <None Include="Resources\folder-delete.png" />
+    <None Include="Resources\cancel.ico" />
+    <None Include="Resources\clear.ico" />
+    <None Include="Resources\file_note.png" />
+    <Content Include="Resources\IconAZ.png" />
+    <Content Include="Resources\IconZA.png" />
+    <None Include="Resources\node.ico" />
+    <None Include="Resources\new.ico" />
+    <None Include="Resources\save.ico" />
+    <None Include="Resources\qr_code.ico" />
+    <Content Include="xEqType.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\reminder.png" />
+    <None Include="Resources\text_list_bullets.png" />
+    <None Include="Resources\printer-blue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

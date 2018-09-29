@@ -1,0 +1,5 @@
+bin\Debug\DataEntity.dll
+bin\Debug\DataEntity.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DataEntity.dll
+obj\Debug\DataEntity.pdb

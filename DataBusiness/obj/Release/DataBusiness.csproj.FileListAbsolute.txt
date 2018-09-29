@@ -1,0 +1,11 @@
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\bin\Release\DataBusiness.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\bin\Release\DataBusiness.pdb
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\bin\Release\DataAccess.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\bin\Release\DataEntity.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\bin\Release\EPPlus.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\bin\Release\zxing.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\bin\Release\DataEntity.pdb
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\bin\Release\DataAccess.pdb
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\obj\Release\DataBusiness.csprojResolveAssemblyReference.cache
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\obj\Release\DataBusiness.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataBusiness\obj\Release\DataBusiness.pdb

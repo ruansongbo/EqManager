@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Solut_EquipentMgr">
+</Property><Property Name="解决方案文件" Value="F:\asp\BN083-大管家固定资产管理系统源码1\BN083-大管家固定资产管理系统源码\Solut_EquipentMgr.sln">
+</Property><Property Name="Date" Value="2013-12-16">
+</Property><Property Name="Time" Value="12:14">
+</Property></Properties><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\DataAccess.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DataAccess" Source="DataAccess\DataAccess.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\DataBusiness.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DataBusiness" Source="DataBusiness\DataBusiness.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\DataEntity.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DataEntity" Source="DataEntity\DataEntity.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Solut_EquipentMgr.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="Solut_EquipentMgr.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\DataAccess.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\DataBusiness.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\DataEntity.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

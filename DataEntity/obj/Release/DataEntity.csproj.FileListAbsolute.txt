@@ -1,0 +1,4 @@
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataEntity\bin\Release\DataEntity.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataEntity\bin\Release\DataEntity.pdb
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataEntity\obj\Release\DataEntity.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\DataEntity\obj\Release\DataEntity.pdb

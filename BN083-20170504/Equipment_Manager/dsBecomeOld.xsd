@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBecomeOld" targetNamespace="http://tempuri.org/dsBecomeOld.xsd" xmlns:mstns="http://tempuri.org/dsBecomeOld.xsd" xmlns="http://tempuri.org/dsBecomeOld.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Equipment_ManageConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="Equipment_ManageConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Equipment_Manager.Properties.Settings.GlobalReference.Default.Equipment_ManageConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_BecomeOldTableAdapter" GeneratorDataComponentClassName="view_BecomeOldTableAdapter" Name="view_BecomeOld" UserDataComponentName="view_BecomeOldTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Equipment_ManageConnectionString (Settings)" DbObjectName="Equipment_Manage.dbo.view_BecomeOld" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT 资产编号, 类别, 名称, 品牌, 型号, 配置, 数量, [单价(￥/元)], 登记日期, [预计寿命(年)], 年折旧率, [资产原总值(￥/元)], [单位年折旧值(￥/元)], [折旧总值(￥/元)], [现总净值(￥/元)] FROM dbo.view_BecomeOld</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="资产编号" DataSetColumn="资产编号" />
+              <Mapping SourceColumn="类别" DataSetColumn="类别" />
+              <Mapping SourceColumn="名称" DataSetColumn="名称" />
+              <Mapping SourceColumn="品牌" DataSetColumn="品牌" />
+              <Mapping SourceColumn="型号" DataSetColumn="型号" />
+              <Mapping SourceColumn="配置" DataSetColumn="配置" />
+              <Mapping SourceColumn="数量" DataSetColumn="数量" />
+              <Mapping SourceColumn="单价(￥/元)" DataSetColumn="单价(￥/元)" />
+              <Mapping SourceColumn="登记日期" DataSetColumn="登记日期" />
+              <Mapping SourceColumn="预计寿命(年)" DataSetColumn="预计寿命(年)" />
+              <Mapping SourceColumn="年折旧率" DataSetColumn="年折旧率" />
+              <Mapping SourceColumn="资产原总值(￥/元)" DataSetColumn="资产原总值(￥/元)" />
+              <Mapping SourceColumn="单位年折旧值(￥/元)" DataSetColumn="单位年折旧值(￥/元)" />
+              <Mapping SourceColumn="折旧总值(￥/元)" DataSetColumn="折旧总值(￥/元)" />
+              <Mapping SourceColumn="现总净值(￥/元)" DataSetColumn="现总净值(￥/元)" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBecomeOld" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBecomeOld" msprop:Generator_DataSetName="dsBecomeOld">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_BecomeOld" msprop:Generator_UserTableName="view_BecomeOld" msprop:Generator_RowDeletedName="view_BecomeOldRowDeleted" msprop:Generator_TableClassName="view_BecomeOldDataTable" msprop:Generator_RowChangedName="view_BecomeOldRowChanged" msprop:Generator_RowClassName="view_BecomeOldRow" msprop:Generator_RowChangingName="view_BecomeOldRowChanging" msprop:Generator_RowEvArgName="view_BecomeOldRowChangeEvent" msprop:Generator_RowEvHandlerName="view_BecomeOldRowChangeEventHandler" msprop:Generator_TablePropName="view_BecomeOld" msprop:Generator_TableVarName="tableview_BecomeOld" msprop:Generator_RowDeletingName="view_BecomeOldRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="资产编号" msprop:Generator_UserColumnName="资产编号" msprop:Generator_ColumnPropNameInRow="资产编号" msprop:Generator_ColumnVarNameInTable="column资产编号" msprop:Generator_ColumnPropNameInTable="资产编号Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="类别" msprop:Generator_UserColumnName="类别" msprop:Generator_ColumnPropNameInRow="类别" msprop:Generator_ColumnVarNameInTable="column类别" msprop:Generator_ColumnPropNameInTable="类别Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="名称" msprop:Generator_UserColumnName="名称" msprop:Generator_ColumnPropNameInRow="名称" msprop:Generator_ColumnVarNameInTable="column名称" msprop:Generator_ColumnPropNameInTable="名称Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="品牌" msprop:Generator_UserColumnName="品牌" msprop:Generator_ColumnPropNameInRow="品牌" msprop:Generator_ColumnVarNameInTable="column品牌" msprop:Generator_ColumnPropNameInTable="品牌Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="型号" msprop:Generator_UserColumnName="型号" msprop:Generator_ColumnPropNameInRow="型号" msprop:Generator_ColumnVarNameInTable="column型号" msprop:Generator_ColumnPropNameInTable="型号Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="配置" msprop:Generator_UserColumnName="配置" msprop:Generator_ColumnPropNameInRow="配置" msprop:Generator_ColumnVarNameInTable="column配置" msprop:Generator_ColumnPropNameInTable="配置Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="数量" msprop:Generator_UserColumnName="数量" msprop:Generator_ColumnPropNameInRow="数量" msprop:Generator_ColumnVarNameInTable="column数量" msprop:Generator_ColumnPropNameInTable="数量Column" type="xs:int" minOccurs="0" />
+              <xs:element name="单价_x0028__xFFE5__x002F_元_x0029_" msprop:Generator_UserColumnName="单价(￥/元)" msprop:Generator_ColumnPropNameInRow="_单价___元_" msprop:Generator_ColumnVarNameInTable="_column单价___元_" msprop:Generator_ColumnPropNameInTable="_单价___元_Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="登记日期" msprop:Generator_UserColumnName="登记日期" msprop:Generator_ColumnPropNameInRow="登记日期" msprop:Generator_ColumnVarNameInTable="column登记日期" msprop:Generator_ColumnPropNameInTable="登记日期Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="预计寿命_x0028_年_x0029_" msprop:Generator_UserColumnName="预计寿命(年)" msprop:Generator_ColumnPropNameInRow="_预计寿命_年_" msprop:Generator_ColumnVarNameInTable="_column预计寿命_年_" msprop:Generator_ColumnPropNameInTable="_预计寿命_年_Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="年折旧率" msdata:ReadOnly="true" msprop:Generator_UserColumnName="年折旧率" msprop:Generator_ColumnPropNameInRow="年折旧率" msprop:Generator_ColumnVarNameInTable="column年折旧率" msprop:Generator_ColumnPropNameInTable="年折旧率Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="资产原总值_x0028__xFFE5__x002F_元_x0029_" msdata:ReadOnly="true" msprop:Generator_UserColumnName="资产原总值(￥/元)" msprop:Generator_ColumnPropNameInRow="_资产原总值___元_" msprop:Generator_ColumnVarNameInTable="_column资产原总值___元_" msprop:Generator_ColumnPropNameInTable="_资产原总值___元_Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="单位年折旧值_x0028__xFFE5__x002F_元_x0029_" msdata:ReadOnly="true" msprop:Generator_UserColumnName="单位年折旧值(￥/元)" msprop:Generator_ColumnPropNameInRow="_单位年折旧值___元_" msprop:Generator_ColumnVarNameInTable="_column单位年折旧值___元_" msprop:Generator_ColumnPropNameInTable="_单位年折旧值___元_Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="折旧总值_x0028__xFFE5__x002F_元_x0029_" msdata:ReadOnly="true" msprop:Generator_UserColumnName="折旧总值(￥/元)" msprop:Generator_ColumnPropNameInRow="_折旧总值___元_" msprop:Generator_ColumnVarNameInTable="_column折旧总值___元_" msprop:Generator_ColumnPropNameInTable="_折旧总值___元_Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="现总净值_x0028__xFFE5__x002F_元_x0029_" msdata:ReadOnly="true" msprop:Generator_UserColumnName="现总净值(￥/元)" msprop:Generator_ColumnPropNameInRow="_现总净值___元_" msprop:Generator_ColumnVarNameInTable="_column现总净值___元_" msprop:Generator_ColumnPropNameInTable="_现总净值___元_Column" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_BecomeOld" />
+      <xs:field xpath="mstns:资产编号" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

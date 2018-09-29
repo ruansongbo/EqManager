@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Solut_EquipentMgr">
+</Property><Property Name="Solution File" Value="F:\BN083\Solut_EquipentMgr.sln">
+</Property><Property Name="User Options File" Value="F:\BN083\Solut_EquipentMgr.suo">
+</Property><Property Name="Date" Value="2017年4月24日">
+</Property><Property Name="Time" Value="17:28">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Solut_EquipentMgr.sln" Description="File successfully backed up as F:\BN083\Backup\Solut_EquipentMgr.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Solut_EquipentMgr.suo" Description="File successfully backed up as F:\BN083\Backup\Solut_EquipentMgr.suo">
+</Event><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\DataAccess.csproj" Description="Project file successfully backed up as F:\BN083\Backup\DataAccess\DataAccess.csproj">
+</Event><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\DataAccess.csproj.user" Description="Project user file successfully backed up as F:\BN083\Backup\DataAccess\DataAccess.csproj.user">
+</Event><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\sqlHandler.cs" Description="File successfully backed up as F:\BN083\Backup\DataAccess\sqlHandler.cs">
+</Event><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\BN083\Backup\DataAccess\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\ClassDiagram1.cd" Description="File successfully backed up as F:\BN083\Backup\DataAccess\ClassDiagram1.cd">
+</Event><Event ErrorLevel="1" Project="DataAccess" Source="DataAccess\DataAccess.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\DataAccess.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DataAccess" Source="DataAccess\DataAccess.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\DataBusiness.csproj" Description="Project file successfully backed up as F:\BN083\Backup\DataBusiness\DataBusiness.csproj">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\AddTypeMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\AddTypeMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\BoroowMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\BoroowMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\ClearMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\ClearMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\ClearTypeMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\ClearTypeMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\ConpanyInfoMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\ConpanyInfoMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\SysMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\SysMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\DepartMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\DepartMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\EmployeeMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\EmployeeMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\EqMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\EqMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\EqNameMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\EqNameMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\EqTypeMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\EqTypeMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\KeeperMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\KeeperMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\KeepPlaceMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\KeepPlaceMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\ReturnMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\ReturnMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\SysUserMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\SysUserMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\UnitMgr.cs" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\UnitMgr.cs">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\ClassDiagram1.cd" Description="File successfully backed up as F:\BN083\Backup\DataBusiness\ClassDiagram1.cd">
+</Event><Event ErrorLevel="1" Project="DataBusiness" Source="DataBusiness\DataBusiness.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\DataBusiness.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DataBusiness" Source="DataBusiness\DataBusiness.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\DataEntity.csproj" Description="Project file successfully backed up as F:\BN083\Backup\DataEntity\DataEntity.csproj">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\Borrow.cs" Description="File successfully backed up as F:\BN083\Backup\DataEntity\Borrow.cs">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\Clear.cs" Description="File successfully backed up as F:\BN083\Backup\DataEntity\Clear.cs">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\Employee.cs" Description="File successfully backed up as F:\BN083\Backup\DataEntity\Employee.cs">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\Equipment.cs" Description="File successfully backed up as F:\BN083\Backup\DataEntity\Equipment.cs">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\BN083\Backup\DataEntity\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\Returns.cs" Description="File successfully backed up as F:\BN083\Backup\DataEntity\Returns.cs">
+</Event><Event ErrorLevel="1" Project="DataEntity" Source="DataEntity\DataEntity.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\DataEntity.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DataEntity" Source="DataEntity\DataEntity.csproj" Description="Converted">
+</Event><Event ErrorLevel="4" Project="Equipment_Manager" Source="http://go.microsoft.com/fwlink/?LinkId=159919" Description="Warning: this project requires Crystal Reports, which is no longer included with Visual Studio. Please click here for more information.">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj" Description="Project file successfully backed up as F:\BN083\Backup\Equipment_Manager\Equipment_Manager.csproj">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj.user" Description="Project user file successfully backed up as F:\BN083\Backup\Equipment_Manager\Equipment_Manager.csproj.user">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsBecomeOld.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsBecomeOld.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByDepart.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByDepart.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByType.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByType.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByType.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByType.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsEqUseing.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsEqUseing.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBackup.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBackup.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBackup.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBackup.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBaseInfo.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBaseInfo.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBaseInfo.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBaseInfo.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBorrow.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBorrow.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBorrow.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBorrow.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBorrowLook.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBorrowLook.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBorrowLook.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBorrowLook.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmClearLook.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmClearLook.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmClearLook.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmClearLook.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmConpanyInfo.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmConpanyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmConpanyInfo.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmConpanyInfo.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmDepart.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmDepart.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmDepart.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmDepart.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEmployee.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEmployee.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEmployee.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEmployee.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqAdd.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqAdd.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqAdd.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqAdd.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmClear.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmClear.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmClear.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmClear.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqInfo.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqInfo.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqInfo.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqInfo.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqUpdate.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqUpdate.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqUpdate.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqUpdate.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmFlash.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmFlash.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmFlash.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmFlash.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmKeeper.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmKeeper.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmKeeper.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmKeeper.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmLogin.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmLogin.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmLogin.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmLogin.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmMain.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmMain.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmMain.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmMain.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmOneEqInfo.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmOneEqInfo.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmOneEqInfo.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmOneEqInfo.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmPowerSet.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmPowerSet.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmPowerSet.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmPowerSet.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReporter\frmReportBecomeOld.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReporter\frmReportBecomeOld.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReporter\frmReportBecomeOld.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReporter\frmReportBecomeOld.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReporter\frmReportEqUseing.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReporter\frmReportEqUseing.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReporter\frmReportEqUseing.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReporter\frmReportEqUseing.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReturn.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReturn.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReturn.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReturn.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReturnLook.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReturnLook.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReturnLook.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReturnLook.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmStat.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmStat.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmStat.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmStat.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmsysUser.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmsysUser.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmsysUser.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmsysUser.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmUpdateSysUserInfo.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmUpdateSysUserInfo.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmUpdateSysUserInfo.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmUpdateSysUserInfo.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Program.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Program.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Properties\Resources.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Properties\Settings.Designer.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Reprter\ReportBecomeOld.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Reprter\ReportBecomeOld.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Reprter\ReportBorrowByDepart.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Reprter\ReportBorrowByDepart.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Reprter\ReportByType.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Reprter\ReportByType.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Reprter\ReporterEqUseing.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Reprter\ReporterEqUseing.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\untCommon.cs" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\untCommon.cs">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\App.config" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\App.config">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\ClassDiagram1.cd" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\ClassDiagram1.cd">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\ClassDiagram2.cd" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\ClassDiagram2.cd">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsBecomeOld.xsc" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsBecomeOld.xsc">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsBecomeOld.xsd" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsBecomeOld.xsd">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsBecomeOld.xss" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsBecomeOld.xss">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByDepart.xsc" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByDepart.xsc">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByDepart.xsd" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByDepart.xsd">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByDepart.xss" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByDepart.xss">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByType.xsc" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByType.xsc">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByType.xsd" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByType.xsd">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsReportByType.xss" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsReportByType.xss">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsEqUseing.xsc" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsEqUseing.xsc">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsEqUseing.xsd" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsEqUseing.xsd">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\dsEqUseing.xss" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\dsEqUseing.xss">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Properties\Settings.settings" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Applications Netscape Communicator.ico" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Applications Netscape Communicator.ico">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBackup.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBackup.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBaseInfo.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBaseInfo.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBorrow.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBorrow.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmBorrowLook.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmBorrowLook.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmClearLook.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmClearLook.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmConpanyInfo.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmConpanyInfo.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmDepart.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmDepart.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEmployee.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEmployee.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqAdd.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqAdd.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmClear.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmClear.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqInfo.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqInfo.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmEqUpdate.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmEqUpdate.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmFlash.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmFlash.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmKeeper.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmKeeper.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmLogin.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmLogin.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmMain.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmOneEqInfo.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmOneEqInfo.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmPowerSet.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmPowerSet.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReporter\frmReportBecomeOld.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReporter\frmReportBecomeOld.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReporter\frmReportEqUseing.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReporter\frmReportEqUseing.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReturn.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReturn.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmReturnLook.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmReturnLook.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmStat.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmStat.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmsysUser.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmsysUser.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\frmUpdateSysUserInfo.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\frmUpdateSysUserInfo.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Properties\Resources.resx" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Reprter\ReportBecomeOld.rpt" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Reprter\ReportBecomeOld.rpt">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Reprter\ReportBorrowByDepart.rpt" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Reprter\ReportBorrowByDepart.rpt">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Reprter\ReportByType.rpt" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Reprter\ReportByType.rpt">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Reprter\ReporterEqUseing.rpt" Description="File successfully backed up as F:\BN083\Backup\Equipment_Manager\Reprter\ReporterEqUseing.rpt">
+</Event><Event ErrorLevel="1" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Solut_EquipentMgr.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Solut_EquipentMgr.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataAccess" Source="DataAccess\DataAccess.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DataBusiness" Source="DataBusiness\DataBusiness.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DataEntity" Source="DataEntity\DataEntity.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Equipment_Manager" Source="Equipment_Manager\Equipment_Manager.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

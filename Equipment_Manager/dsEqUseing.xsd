@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsEqUseing" targetNamespace="http://tempuri.org/dsReturn.xsd" xmlns:mstns="http://tempuri.org/dsReturn.xsd" xmlns="http://tempuri.org/dsReturn.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Equipment_ManageConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="Equipment_ManageConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Equipment_Manager.Properties.Settings.GlobalReference.Default.Equipment_ManageConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_EqUseingTableAdapter" GeneratorDataComponentClassName="view_EqUseingTableAdapter" Name="view_EqUseing" UserDataComponentName="view_EqUseingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Equipment_ManageConnectionString (Settings)" DbObjectName="Equipment_Manage.dbo.view_EqUseing" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT 资产编码, 名称, 品牌, 资产总量, 已领用总量, 资产利用率 FROM dbo.view_EqUseing</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="资产编码" DataSetColumn="资产编码" />
+              <Mapping SourceColumn="名称" DataSetColumn="名称" />
+              <Mapping SourceColumn="品牌" DataSetColumn="品牌" />
+              <Mapping SourceColumn="资产总量" DataSetColumn="资产总量" />
+              <Mapping SourceColumn="已领用总量" DataSetColumn="已领用总量" />
+              <Mapping SourceColumn="资产利用率" DataSetColumn="资产利用率" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsEqUseing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsEqUseing" msprop:Generator_DataSetName="dsEqUseing">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_EqUseing" msprop:Generator_UserTableName="view_EqUseing" msprop:Generator_RowDeletedName="view_EqUseingRowDeleted" msprop:Generator_TableClassName="view_EqUseingDataTable" msprop:Generator_RowChangedName="view_EqUseingRowChanged" msprop:Generator_RowClassName="view_EqUseingRow" msprop:Generator_RowChangingName="view_EqUseingRowChanging" msprop:Generator_RowEvArgName="view_EqUseingRowChangeEvent" msprop:Generator_RowEvHandlerName="view_EqUseingRowChangeEventHandler" msprop:Generator_TablePropName="view_EqUseing" msprop:Generator_TableVarName="tableview_EqUseing" msprop:Generator_RowDeletingName="view_EqUseingRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="资产编码" msprop:Generator_UserColumnName="资产编码" msprop:Generator_ColumnPropNameInRow="资产编码" msprop:Generator_ColumnVarNameInTable="column资产编码" msprop:Generator_ColumnPropNameInTable="资产编码Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="名称" msprop:Generator_UserColumnName="名称" msprop:Generator_ColumnPropNameInRow="名称" msprop:Generator_ColumnVarNameInTable="column名称" msprop:Generator_ColumnPropNameInTable="名称Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="品牌" msprop:Generator_UserColumnName="品牌" msprop:Generator_ColumnPropNameInRow="品牌" msprop:Generator_ColumnVarNameInTable="column品牌" msprop:Generator_ColumnPropNameInTable="品牌Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="资产总量" msprop:Generator_UserColumnName="资产总量" msprop:Generator_ColumnPropNameInRow="资产总量" msprop:Generator_ColumnVarNameInTable="column资产总量" msprop:Generator_ColumnPropNameInTable="资产总量Column" type="xs:int" minOccurs="0" />
+              <xs:element name="已领用总量" msprop:Generator_UserColumnName="已领用总量" msprop:Generator_ColumnPropNameInRow="已领用总量" msprop:Generator_ColumnVarNameInTable="column已领用总量" msprop:Generator_ColumnPropNameInTable="已领用总量Column" type="xs:int" minOccurs="0" />
+              <xs:element name="资产利用率" msdata:ReadOnly="true" msprop:Generator_UserColumnName="资产利用率" msprop:Generator_ColumnPropNameInRow="资产利用率" msprop:Generator_ColumnVarNameInTable="column资产利用率" msprop:Generator_ColumnPropNameInTable="资产利用率Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="21" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_EqUseing" />
+      <xs:field xpath="mstns:资产编码" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,4 @@
+G:\MyCode\C#\EqManager\EqManager_v2.2\RedrawControl\bin\Release\RedrawControl.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\RedrawControl\bin\Release\RedrawControl.pdb
+G:\MyCode\C#\EqManager\EqManager_v2.2\RedrawControl\obj\Release\RedrawControl.dll
+G:\MyCode\C#\EqManager\EqManager_v2.2\RedrawControl\obj\Release\RedrawControl.pdb

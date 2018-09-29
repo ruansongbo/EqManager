@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReportByDepart" targetNamespace="http://tempuri.org/dsReportByDepart.xsd" xmlns:mstns="http://tempuri.org/dsReportByDepart.xsd" xmlns="http://tempuri.org/dsReportByDepart.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Equipment_ManageConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="Equipment_ManageConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Equipment_Manager.Properties.Settings.GlobalReference.Default.Equipment_ManageConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_ReportBorrowByDepartTableAdapter" GeneratorDataComponentClassName="view_ReportBorrowByDepartTableAdapter" Name="view_ReportBorrowByDepart" UserDataComponentName="view_ReportBorrowByDepartTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Equipment_ManageConnectionString (Settings)" DbObjectName="Equipment_Manage.dbo.view_ReportBorrowByDepart" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT 使用部门, 领用总数, [领用总值(￥/元)] FROM dbo.view_ReportBorrowByDepart</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="使用部门" DataSetColumn="使用部门" />
+              <Mapping SourceColumn="领用总数" DataSetColumn="领用总数" />
+              <Mapping SourceColumn="领用总值(￥/元)" DataSetColumn="领用总值(￥/元)" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReportByDepart" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsReportByDepart" msprop:Generator_DataSetName="dsReportByDepart">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_ReportBorrowByDepart" msprop:Generator_UserTableName="view_ReportBorrowByDepart" msprop:Generator_RowDeletedName="view_ReportBorrowByDepartRowDeleted" msprop:Generator_TableClassName="view_ReportBorrowByDepartDataTable" msprop:Generator_RowChangedName="view_ReportBorrowByDepartRowChanged" msprop:Generator_RowClassName="view_ReportBorrowByDepartRow" msprop:Generator_RowChangingName="view_ReportBorrowByDepartRowChanging" msprop:Generator_RowEvArgName="view_ReportBorrowByDepartRowChangeEvent" msprop:Generator_RowEvHandlerName="view_ReportBorrowByDepartRowChangeEventHandler" msprop:Generator_TablePropName="view_ReportBorrowByDepart" msprop:Generator_TableVarName="tableview_ReportBorrowByDepart" msprop:Generator_RowDeletingName="view_ReportBorrowByDepartRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="使用部门" msprop:Generator_UserColumnName="使用部门" msprop:Generator_ColumnPropNameInRow="使用部门" msprop:Generator_ColumnVarNameInTable="column使用部门" msprop:Generator_ColumnPropNameInTable="使用部门Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="领用总数" msprop:Generator_UserColumnName="领用总数" msprop:Generator_ColumnPropNameInRow="领用总数" msprop:Generator_ColumnVarNameInTable="column领用总数" msprop:Generator_ColumnPropNameInTable="领用总数Column" type="xs:int" minOccurs="0" />
+              <xs:element name="领用总值_x0028__xFFE5__x002F_元_x0029_" msprop:Generator_UserColumnName="领用总值(￥/元)" msprop:Generator_ColumnPropNameInRow="_领用总值___元_" msprop:Generator_ColumnVarNameInTable="_column领用总值___元_" msprop:Generator_ColumnPropNameInTable="_领用总值___元_Column" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
