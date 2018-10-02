@@ -144,3 +144,7 @@ C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataEntity\bin\Debug\DataEntity.
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataEntity\bin\Debug\DataEntity.pdb
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataEntity\obj\Debug\DataEntity.dll
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataEntity\obj\Debug\DataEntity.pdb
+C:\Users\Administrator\Documents\EqManager\DataEntity\bin\Debug\DataEntity.dll
+C:\Users\Administrator\Documents\EqManager\DataEntity\bin\Debug\DataEntity.pdb
+C:\Users\Administrator\Documents\EqManager\DataEntity\obj\Debug\DataEntity.dll
+C:\Users\Administrator\Documents\EqManager\DataEntity\obj\Debug\DataEntity.pdb

@@ -364,3 +364,14 @@ C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataBusiness\bin\Debug\DataAcces
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataBusiness\obj\Debug\DataBusiness.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataBusiness\obj\Debug\DataBusiness.dll
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataBusiness\obj\Debug\DataBusiness.pdb
+C:\Users\Administrator\Documents\EqManager\DataBusiness\bin\Debug\DataBusiness.dll
+C:\Users\Administrator\Documents\EqManager\DataBusiness\bin\Debug\DataBusiness.pdb
+C:\Users\Administrator\Documents\EqManager\DataBusiness\bin\Debug\DataAccess.dll
+C:\Users\Administrator\Documents\EqManager\DataBusiness\bin\Debug\DataEntity.dll
+C:\Users\Administrator\Documents\EqManager\DataBusiness\bin\Debug\EPPlus.dll
+C:\Users\Administrator\Documents\EqManager\DataBusiness\bin\Debug\zxing.dll
+C:\Users\Administrator\Documents\EqManager\DataBusiness\bin\Debug\DataEntity.pdb
+C:\Users\Administrator\Documents\EqManager\DataBusiness\bin\Debug\DataAccess.pdb
+C:\Users\Administrator\Documents\EqManager\DataBusiness\obj\Debug\DataBusiness.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\EqManager\DataBusiness\obj\Debug\DataBusiness.dll
+C:\Users\Administrator\Documents\EqManager\DataBusiness\obj\Debug\DataBusiness.pdb

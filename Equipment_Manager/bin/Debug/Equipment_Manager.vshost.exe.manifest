@@ -155,19 +155,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>I9C7HNwR/MUCTTsVuD+ANt4ycY0=</dsig:DigestValue>
+        <dsig:DigestValue>23YkS1+zTP6uEmGK5I/jlzvYo2M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataBusiness.dll" size="98304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataBusiness.dll" size="98816">
       <assemblyIdentity name="DataBusiness" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Hc4Lq1ogMJfHwWbJHqmArT92/4I=</dsig:DigestValue>
+        <dsig:DigestValue>64cMKpzCElpPwZ3OIjZl3u8pzaw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -179,7 +179,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Ondq/76b4S/XfUPzMbz4VFA6owY=</dsig:DigestValue>
+        <dsig:DigestValue>wEm6xmsL4D7gFzIwPK1dJgLn5kA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -196,14 +196,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Equipment_Manager.exe" size="3414016">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Equipment_Manager.exe" size="3416064">
       <assemblyIdentity name="Equipment_Manager" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>GSWSVm5LgRJu82SQ3R1poL0Vywg=</dsig:DigestValue>
+        <dsig:DigestValue>59j6sFQqtoGKWflL9+xl4hVlaMk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -227,7 +227,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>WQYqyLUwCSRRC9JoC+BQWsAJXGQ=</dsig:DigestValue>
+        <dsig:DigestValue>PQnuUCFKKCuWhWS59U5xMjMZIM8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

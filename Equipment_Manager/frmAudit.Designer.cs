@@ -39,14 +39,14 @@
             this.ToolStripMenuReturn = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dgvBorrowAudit = new System.Windows.Forms.DataGridView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dgvFixAudit = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dgvClearAudit = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dgvUpdateAudit = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dgvBorrowAudit = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dgvFixAudit = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.accept_toolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -59,14 +59,14 @@
             this.contextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrowAudit)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFixAudit)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClearAudit)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUpdateAudit)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrowAudit)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFixAudit)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,6 +140,7 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.Location = new System.Drawing.Point(16, 32);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
@@ -147,6 +148,7 @@
             this.tabControl1.Size = new System.Drawing.Size(905, 497);
             this.tabControl1.TabIndex = 1;
             this.tabControl1.Tag = "";
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
@@ -160,62 +162,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "新增信息";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.dgvBorrowAudit);
-            this.tabPage2.Location = new System.Drawing.Point(4, 26);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(897, 467);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "借用信息";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dgvBorrowAudit
-            // 
-            this.dgvBorrowAudit.AllowUserToAddRows = false;
-            this.dgvBorrowAudit.AllowUserToDeleteRows = false;
-            this.dgvBorrowAudit.AllowUserToResizeColumns = false;
-            this.dgvBorrowAudit.AllowUserToResizeRows = false;
-            this.dgvBorrowAudit.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvBorrowAudit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBorrowAudit.Location = new System.Drawing.Point(8, 8);
-            this.dgvBorrowAudit.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvBorrowAudit.Name = "dgvBorrowAudit";
-            this.dgvBorrowAudit.RowTemplate.Height = 23;
-            this.dgvBorrowAudit.Size = new System.Drawing.Size(879, 463);
-            this.dgvBorrowAudit.TabIndex = 0;
-            this.dgvBorrowAudit.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvBorrowAudit_CellMouseDown);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dgvFixAudit);
-            this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(897, 467);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "维修信息";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dgvFixAudit
-            // 
-            this.dgvFixAudit.AllowUserToAddRows = false;
-            this.dgvFixAudit.AllowUserToDeleteRows = false;
-            this.dgvFixAudit.AllowUserToResizeColumns = false;
-            this.dgvFixAudit.AllowUserToResizeRows = false;
-            this.dgvFixAudit.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvFixAudit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFixAudit.Location = new System.Drawing.Point(8, 8);
-            this.dgvFixAudit.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvFixAudit.Name = "dgvFixAudit";
-            this.dgvFixAudit.RowTemplate.Height = 23;
-            this.dgvFixAudit.Size = new System.Drawing.Size(879, 463);
-            this.dgvFixAudit.TabIndex = 1;
-            this.dgvFixAudit.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFixAudit_CellMouseDown);
             // 
             // tabPage4
             // 
@@ -276,6 +222,62 @@
             this.dgvUpdateAudit.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUpdateAudit_CellDoubleClick);
             this.dgvUpdateAudit.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvUpdateAudit_CellMouseDown);
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dgvBorrowAudit);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(897, 467);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "借用信息";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dgvBorrowAudit
+            // 
+            this.dgvBorrowAudit.AllowUserToAddRows = false;
+            this.dgvBorrowAudit.AllowUserToDeleteRows = false;
+            this.dgvBorrowAudit.AllowUserToResizeColumns = false;
+            this.dgvBorrowAudit.AllowUserToResizeRows = false;
+            this.dgvBorrowAudit.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvBorrowAudit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBorrowAudit.Location = new System.Drawing.Point(8, 8);
+            this.dgvBorrowAudit.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvBorrowAudit.Name = "dgvBorrowAudit";
+            this.dgvBorrowAudit.RowTemplate.Height = 23;
+            this.dgvBorrowAudit.Size = new System.Drawing.Size(879, 463);
+            this.dgvBorrowAudit.TabIndex = 0;
+            this.dgvBorrowAudit.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvBorrowAudit_CellMouseDown);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dgvFixAudit);
+            this.tabPage3.Location = new System.Drawing.Point(4, 26);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Size = new System.Drawing.Size(897, 467);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "维修信息";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dgvFixAudit
+            // 
+            this.dgvFixAudit.AllowUserToAddRows = false;
+            this.dgvFixAudit.AllowUserToDeleteRows = false;
+            this.dgvFixAudit.AllowUserToResizeColumns = false;
+            this.dgvFixAudit.AllowUserToResizeRows = false;
+            this.dgvFixAudit.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvFixAudit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFixAudit.Location = new System.Drawing.Point(8, 8);
+            this.dgvFixAudit.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvFixAudit.Name = "dgvFixAudit";
+            this.dgvFixAudit.RowTemplate.Height = 23;
+            this.dgvFixAudit.Size = new System.Drawing.Size(879, 463);
+            this.dgvFixAudit.TabIndex = 1;
+            this.dgvFixAudit.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFixAudit_CellMouseDown);
+            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -300,6 +302,7 @@
             this.accept_toolStripButton.Name = "accept_toolStripButton";
             this.accept_toolStripButton.Size = new System.Drawing.Size(94, 25);
             this.accept_toolStripButton.Text = "审核通过";
+            this.accept_toolStripButton.Click += new System.EventHandler(this.accept_toolStripButton_Click);
             // 
             // toolStripSeparator1
             // 
@@ -314,6 +317,7 @@
             this.refuse_toolStripButton.Name = "refuse_toolStripButton";
             this.refuse_toolStripButton.Size = new System.Drawing.Size(110, 25);
             this.refuse_toolStripButton.Text = "审核不通过";
+            this.refuse_toolStripButton.Click += new System.EventHandler(this.refuse_toolStripButton_Click);
             // 
             // toolStripSeparator2
             // 
@@ -328,6 +332,7 @@
             this.modify_toolStripButton.Name = "modify_toolStripButton";
             this.modify_toolStripButton.Size = new System.Drawing.Size(126, 25);
             this.modify_toolStripButton.Text = "修改提交信息";
+            this.modify_toolStripButton.Click += new System.EventHandler(this.modify_toolStripButton_Click);
             // 
             // toolStripSeparator3
             // 
@@ -342,6 +347,7 @@
             this.delete_toolStripButton.Name = "delete_toolStripButton";
             this.delete_toolStripButton.Size = new System.Drawing.Size(126, 25);
             this.delete_toolStripButton.Text = "删除提交信息";
+            this.delete_toolStripButton.Click += new System.EventHandler(this.delete_toolStripButton_Click);
             // 
             // frmAudit
             // 
@@ -360,14 +366,14 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrowAudit)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFixAudit)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClearAudit)).EndInit();
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUpdateAudit)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrowAudit)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFixAudit)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -165,6 +165,55 @@ namespace Equipment_Manager
             initcbxEmployee(this.cbxEqKeeper);
             initcbxEmployee(this.cbxPurchaser);
 
+            switch (this.mode)
+            {
+                case 0:
+                    this.toolEqAdd.Visible = false;
+                    this.toolEqUpdate.Visible = true;
+                    this.toolEqUpdate.Size = new System.Drawing.Size(475, 25);
+                    this.toolCancel.Visible = true;
+                    this.toolCancel.Size = new System.Drawing.Size(475, 25);
+                    this.toolPrint.Visible = false;
+                    break;
+                case 1:
+                    this.toolEqAdd.Visible = true;
+                    this.toolEqAdd.Size = new System.Drawing.Size(237, 25);
+                    this.toolEqUpdate.Visible = true;
+                    this.toolEqUpdate.Size = new System.Drawing.Size(237, 25);
+                    this.toolCancel.Visible = true;
+                    this.toolCancel.Size = new System.Drawing.Size(237, 25);
+                    this.toolPrint.Visible = true;
+                    this.toolPrint.Size = new System.Drawing.Size(237, 25);
+                    break;
+                case 2:
+                    this.toolEqAdd.Visible = false;
+                    this.toolEqUpdate.Visible = true;
+                    this.toolEqUpdate.Size = new System.Drawing.Size(475, 25);
+                    this.toolCancel.Visible = true;
+                    this.toolCancel.Size = new System.Drawing.Size(475, 25);
+                    this.toolPrint.Visible = false;
+                    break;
+                case 3:
+                    this.toolEqAdd.Visible = false;
+                    this.toolEqUpdate.Visible = true;
+                    this.toolEqUpdate.Size = new System.Drawing.Size(475, 25);
+                    this.toolCancel.Visible = true;
+                    this.toolCancel.Size = new System.Drawing.Size(475, 25);
+                    this.toolPrint.Visible = false;
+                    break;
+                case 4:
+                    this.toolEqAdd.Visible = false;
+                    this.toolEqUpdate.Visible = true;
+                    this.toolEqUpdate.Size = new System.Drawing.Size(475, 25);
+                    this.toolCancel.Visible = true;
+                    this.toolCancel.Size = new System.Drawing.Size(475, 25);
+                    this.toolPrint.Visible = false;
+                    break;
+            }
+
+
+
+
             //根据eqno初始化窗口
             if (this.eqno != "")
             {
@@ -697,6 +746,9 @@ namespace Equipment_Manager
                 //判断更新模式
                 switch (this.mode)
                 {
+                    case 0:
+                        this.DialogResult = DialogResult.OK;
+                        break;
                     //直接修改
                     case 1:
                             {

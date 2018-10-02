@@ -19,6 +19,7 @@ namespace Equipment_Manager
             SetStyle(ControlStyles.UserPaint, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true); // ½ûÖ¹²Á³ý±³¾°.
             SetStyle(ControlStyles.DoubleBuffer, true); // Ë«»º³å
+            view_only = false;
         }
         protected override CreateParams CreateParams
         {

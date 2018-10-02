@@ -90,3 +90,7 @@ C:\Users\Administrator\Desktop\q\EqManager_v3.5\RedrawControl\bin\Debug\RedrawCo
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\RedrawControl\bin\Debug\RedrawControl.pdb
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\RedrawControl\obj\Debug\RedrawControl.dll
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\RedrawControl\obj\Debug\RedrawControl.pdb
+C:\Users\Administrator\Documents\EqManager\RedrawControl\bin\Debug\RedrawControl.dll
+C:\Users\Administrator\Documents\EqManager\RedrawControl\bin\Debug\RedrawControl.pdb
+C:\Users\Administrator\Documents\EqManager\RedrawControl\obj\Debug\RedrawControl.dll
+C:\Users\Administrator\Documents\EqManager\RedrawControl\obj\Debug\RedrawControl.pdb

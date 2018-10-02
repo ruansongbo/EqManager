@@ -213,6 +213,8 @@ namespace DataBusiness
             SqlParameter paramBelongTo = new SqlParameter("@belongTo", SqlDbType.VarChar, 50);
             paramBelongTo.Value = "";
 
+
+
             //获取图片路径
             SqlParameter paramPhoto;
             if (eq.Photo == "")
@@ -248,6 +250,9 @@ namespace DataBusiness
 
             SqlParameter paramRemark = new SqlParameter("@remark", SqlDbType.VarChar, 200);
             paramRemark.Value = eq.Remark;
+
+            SqlParameter paramAudit = new SqlParameter("@audit", SqlDbType.VarChar, 50);
+            paramAudit.Value = "";
             /***************Equipment表的属性定义**********************************************************************************/
 
 
@@ -257,7 +262,7 @@ namespace DataBusiness
                          "@svcDate,@campus,@keepPlace,@cn,@invNo,@funds,@relicLv,@regAuz,@regTime,@patNo," +
                          "@apvNo,@mgtAgency,@carUse,@carBP,@licNo,@dspl,@engNo,@formation,@area,@pr," +
                          "@certNo,@issueDate,@certLim,@certProve,@address,@certNature,@tenuArea,@tenuPrice,@structure," +
-                         "@belongTo,@photo,@state,@remark)";
+                         "@belongTo,@photo,@state,@remark,@audit)";
             sqlHandler sh = new sqlHandler();
             try
             {
@@ -266,7 +271,8 @@ namespace DataBusiness
                     paramMfrs, paramProductNo, paramBirthday, paramSupplier, paramPriceType, paramPrice, paramUsdPrice, paramEqKeeper, paramDepartment,
                     paramSvcDate, paramCampus, paramKeepPlace, paramCn, paramInvNo, paramFunds, paramRelicLv, paramRegAuz, paramRegTime, paramPatNo,
                     paramApvNo, paramMgtAgency, paramCarUse, paramCarBP, paramLicNo, paramDspl, paramEngNo, paramFormation, paramArea, paramPr,
-                    paramCertNo, paramIssueDate, paramCertLim, paramCertProve, paramAddress, paramCertNature, paramTenuArea, paramTenuPrice, paramStructure, paramBelongTo, paramPhoto,paramState, paramRemark);
+                    paramCertNo, paramIssueDate, paramCertLim, paramCertProve, paramAddress, paramCertNature, paramTenuArea, paramTenuPrice, 
+                    paramStructure, paramBelongTo, paramPhoto, paramState, paramRemark, paramAudit);
                 return result > 0;
             }
             catch
@@ -1211,9 +1217,9 @@ namespace DataBusiness
         /// 拒绝新增单
         /// </summary>
         /// <returns></returns>
-        public static bool failChangeEqNo(string eqno)
+        public static bool failChangeEqNo(string eqno, string audit)
         {
-            string sql = string.Format("update Equipment set State='新增审核未通过' where EqNo='{0}'", eqno);
+            string sql = string.Format("update Equipment set State='新增审核未通过', audit='{1}' where EqNo='{0}'", eqno, audit);
             sqlHandler sh = new sqlHandler();
             return sh.ExecuteNonQuery(sql) > 0;
         }
@@ -1729,9 +1735,9 @@ namespace DataBusiness
         /// </summary>
         /// <param name="EqNo">流水号</param>
         /// <returns></returns>
-        public static bool disagreeUpdateAudit(string EqNo)
+        public static bool disagreeUpdateAudit(string EqNo, string audit)
         {
-            string sql = string.Format("update Equipment set state='更新审核未通过' where EqNo='{0}'", EqNo);
+            string sql = string.Format("update Equipment set state='更新审核未通过', audit='{1}'  where EqNo='{0}'", EqNo, audit);
             sqlHandler sh = new sqlHandler();
             return sh.ExecuteNonQuery(sql) > 0;
         }
@@ -1838,6 +1844,24 @@ namespace DataBusiness
             }
         }
         #endregion 状态更新
+
+        /// <summary>
+        /// 通过单号获取审核意见
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        public static string GetAuditFromID(string ID)
+        {
+            sqlHandler sh = new sqlHandler();
+            string sql = string.Format("select Audit from Equipment where EqNo='{0}'", ID);
+            DataTable dt = sh.GetData(sql);
+            string result = "";
+            if (dt.Rows.Count > 0)
+            {
+                result = dt.Rows[0][0].ToString();
+            }
+            return result;
+        }
 
     }
 }

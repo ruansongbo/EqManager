@@ -132,3 +132,7 @@ C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataAccess\bin\Debug\DataAccess.
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataAccess\bin\Debug\DataAccess.pdb
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Administrator\Desktop\q\EqManager_v3.5\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Administrator\Documents\EqManager\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Administrator\Documents\EqManager\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Administrator\Documents\EqManager\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Administrator\Documents\EqManager\DataAccess\obj\Debug\DataAccess.pdb

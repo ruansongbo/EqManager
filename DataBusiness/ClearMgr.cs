@@ -188,7 +188,7 @@ namespace DataBusiness
         /// <returns></returns>
         public static bool disagreeAudit(string ID, string user, string audit)
         {
-            string sql = string.Format("update ClearLog set cReviewer='{1}', state='注销审核未通过' , audit='{2}'where serialNo='{0}'", ID, user, audit);
+            string sql = string.Format("update ClearLog set cReviewer='{1}', state='注销审核未通过' , audit='{2}' where serialNo='{0}'", ID, user, audit);
             sqlHandler sh = new sqlHandler();
             return sh.ExecuteNonQuery(sql) > 0;
         }
@@ -415,6 +415,25 @@ namespace DataBusiness
                 return null;
             }
 
+        }
+
+
+        /// <summary>
+        /// 通过流水号获取审核意见
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        public static string GetAuditFromID(string ID)
+        {
+            sqlHandler sh = new sqlHandler();
+            string sql = string.Format("select Audit from ClearLog where serialNo='{0}'", ID);
+            DataTable dt = sh.GetData(sql);
+            string result = "";
+            if (dt.Rows.Count > 0)
+            {
+                result = dt.Rows[0][0].ToString();
+            }
+            return result;
         }
 
     }

@@ -70,6 +70,9 @@ namespace Equipment_Manager
             this.LoadClearAuditData();
             this.LoadUpdateAuditData();
         }
+        #region 加载
+        
+
         /// <summary>
         /// 加载新增信息
         /// </summary>
@@ -80,6 +83,14 @@ namespace Equipment_Manager
             {
                 this.ToolStripMenuRevise.Visible = false;
                 this.ToolStripMenuDelete.Visible = false;
+                this.ToolStripMenuAgree.Visible = true;
+                this.ToolStripMenuDisagree.Visible = true;
+                this.ToolStripMenuReturn.Visible = false;
+
+                this.modify_toolStripButton.Visible = false;
+                this.delete_toolStripButton.Visible = false;
+                this.accept_toolStripButton.Visible = true;
+                this.refuse_toolStripButton.Visible = true;
                 DataTable dat = EqMgr.getAuditList();
                 int list_count = EqMgr.getAuditListCount();
                 this.tabPage1.Text = string.Format("新增信息({0}条)", list_count);
@@ -93,8 +104,16 @@ namespace Equipment_Manager
             }
             else
             {
+                this.ToolStripMenuRevise.Visible = true;
+                this.ToolStripMenuDelete.Visible = true;
                 this.ToolStripMenuAgree.Visible = false;
                 this.ToolStripMenuDisagree.Visible = false;
+                this.ToolStripMenuReturn.Visible = false;
+
+                this.modify_toolStripButton.Visible = true;
+                this.delete_toolStripButton.Visible = true;
+                this.accept_toolStripButton.Visible = false;
+                this.refuse_toolStripButton.Visible = false;
                 DataTable dat = EqMgr.getUnAuditList(_user);
                 int list_count = EqMgr.getUnAuditListCount(_user);
                 this.tabPage1.Text = string.Format("新增信息({0}条)", list_count);
@@ -117,7 +136,14 @@ namespace Equipment_Manager
                 this.tabPage2.Text = "借用信息";
                 this.ToolStripMenuRevise.Visible = false;
                 this.ToolStripMenuDelete.Visible = false;
+                this.ToolStripMenuAgree.Visible = true;
+                this.ToolStripMenuDisagree.Visible = true;
                 this.ToolStripMenuReturn.Visible = true;
+
+                this.modify_toolStripButton.Visible = false;
+                this.delete_toolStripButton.Visible = false;
+                this.accept_toolStripButton.Visible = true;
+                this.refuse_toolStripButton.Visible = true;
                 DataTable dat = BoroowMgr.getAuditList(_user);
                 if (dat != null)
                 {
@@ -130,9 +156,16 @@ namespace Equipment_Manager
             else
             {
                 this.tabPage2.Text = "借用信息";
+                this.ToolStripMenuRevise.Visible = true;
+                this.ToolStripMenuDelete.Visible = true;
                 this.ToolStripMenuAgree.Visible = false;
                 this.ToolStripMenuDisagree.Visible = false;
                 this.ToolStripMenuReturn.Visible = true;
+
+                this.modify_toolStripButton.Visible = true;
+                this.delete_toolStripButton.Visible = true;
+                this.accept_toolStripButton.Visible = false;
+                this.refuse_toolStripButton.Visible = false;
                 DataTable Empdt = EmployeeMgr.GetAllName();
                 DataTable dat = BoroowMgr.getUnAuditList(_user);
                 if (dat != null)
@@ -154,7 +187,14 @@ namespace Equipment_Manager
                 this.tabPage3.Text = "维修信息";
                 this.ToolStripMenuRevise.Visible = false;
                 this.ToolStripMenuDelete.Visible = false;
+                this.ToolStripMenuAgree.Visible = true;
+                this.ToolStripMenuDisagree.Visible = true;
                 this.ToolStripMenuReturn.Visible = true;
+
+                this.modify_toolStripButton.Visible = false;
+                this.delete_toolStripButton.Visible = false;
+                this.accept_toolStripButton.Visible = true;
+                this.refuse_toolStripButton.Visible = true;
                 DataTable dat = FixMgr.getAuditList(_user);
                 if (dat != null)
                 {
@@ -167,9 +207,16 @@ namespace Equipment_Manager
             else
             {
                 this.tabPage3.Text = "维修信息";
+                this.ToolStripMenuRevise.Visible = true;
+                this.ToolStripMenuDelete.Visible = true;
                 this.ToolStripMenuAgree.Visible = false;
                 this.ToolStripMenuDisagree.Visible = false;
                 this.ToolStripMenuReturn.Visible = true;
+
+                this.modify_toolStripButton.Visible = true;
+                this.delete_toolStripButton.Visible = true;
+                this.accept_toolStripButton.Visible = false;
+                this.refuse_toolStripButton.Visible = false;
                 DataTable Empdt = EmployeeMgr.GetAllName();
                 DataTable dat = FixMgr.getUnAuditList(_user);
                 if (dat != null)
@@ -190,7 +237,14 @@ namespace Equipment_Manager
             {
                 this.ToolStripMenuRevise.Visible = false;
                 this.ToolStripMenuDelete.Visible = false;
+                this.ToolStripMenuAgree.Visible = true;
+                this.ToolStripMenuDisagree.Visible = true;
                 this.ToolStripMenuReturn.Visible = false;
+
+                this.modify_toolStripButton.Visible = false;
+                this.delete_toolStripButton.Visible = false;
+                this.accept_toolStripButton.Visible = true;
+                this.refuse_toolStripButton.Visible = true;
                 DataTable dat = ClearMgr.getAuditList(_departId, _power);
                 int list_count = ClearMgr.getAuditListCount();
                 this.tabPage4.Text = string.Format("注销信息({0}条)", list_count);
@@ -204,9 +258,16 @@ namespace Equipment_Manager
             }
             else
             {
+                this.ToolStripMenuRevise.Visible = true;
+                this.ToolStripMenuDelete.Visible = true;
                 this.ToolStripMenuAgree.Visible = false;
                 this.ToolStripMenuDisagree.Visible = false;
                 this.ToolStripMenuReturn.Visible = false;
+
+                this.modify_toolStripButton.Visible = true;
+                this.delete_toolStripButton.Visible = true;
+                this.accept_toolStripButton.Visible = false;
+                this.refuse_toolStripButton.Visible = false;
                 DataTable Empdt = EmployeeMgr.GetAllName();
                 DataTable dat = ClearMgr.getUnAuditList(_user);
                 int list_count = ClearMgr.getUnAuditListCount(_user);
@@ -229,7 +290,14 @@ namespace Equipment_Manager
             {
                 this.ToolStripMenuRevise.Visible = false;
                 this.ToolStripMenuDelete.Visible = false;
+                this.ToolStripMenuAgree.Visible = true;
+                this.ToolStripMenuDisagree.Visible = true;
                 this.ToolStripMenuReturn.Visible = false;
+
+                this.refuse_toolStripButton.Visible = false;
+                this.delete_toolStripButton.Visible = false;
+                this.accept_toolStripButton.Visible = true;
+                this.refuse_toolStripButton.Visible = true;
                 DataTable dat = EqMgr.getUpdateAuditList(_departId, _power);
                 int list_count = EqMgr.getUpdateAuditListCount();
                 this.tabPage5.Text = string.Format("更新信息({0}条)", list_count);
@@ -243,12 +311,19 @@ namespace Equipment_Manager
             }
             else
             {
+                this.ToolStripMenuRevise.Visible = true;
+                this.ToolStripMenuDelete.Visible = true;
                 this.ToolStripMenuAgree.Visible = false;
                 this.ToolStripMenuDisagree.Visible = false;
                 this.ToolStripMenuReturn.Visible = false;
+
+                this.refuse_toolStripButton.Visible = true;
+                this.delete_toolStripButton.Visible = true;
+                this.accept_toolStripButton.Visible = false;
+                this.refuse_toolStripButton.Visible = false;
                 DataTable Empdt = EmployeeMgr.GetAllName();
                 DataTable dat = EqMgr.getUpdateUnAuditList(this.name2ID(Empdt, _user, "name"));
-                int list_count = EqMgr.getUpdateUnAuditListCount(_user);
+                int list_count = EqMgr.getUpdateUnAuditListCount(this.name2ID(Empdt, _user, "name"));
                 this.tabPage5.Text = string.Format("更新信息({0}条)", list_count);
                 if (dat != null)
                 {
@@ -259,12 +334,11 @@ namespace Equipment_Manager
                 }
             }
         }
-        /// <summary>
-        /// 审核通过
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ToolStripMenuItem_Click(object sender, EventArgs e)
+        #endregion
+
+        #region 右键操作
+
+        private void enterAgreeItem()
         {
             int suc_count = 0;
             string out_str = "";
@@ -274,7 +348,7 @@ namespace Equipment_Manager
                     for (int i = 0; i < dgvAddAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvAddAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                        string state = dr.ItemArray[10].ToString();
+                        string state = dr.ItemArray[0].ToString();
                         switch (state)
                         {
                             case "新增待审核":
@@ -282,14 +356,14 @@ namespace Equipment_Manager
                                 int allCount = EqMgr.getAllAssetCount();
                                 int eqCount = EqMgr.getAllEqCount();
                                 int assetCount = allCount - tempCount + 1;
-                                string tempAsset = dr.ItemArray[0].ToString();
+                                string tempAsset = dr.ItemArray[1].ToString();
                                 int count = Convert.ToInt32(tempAsset.Substring(tempAsset.Length - 3, 3));
                                 int eq_count = 0;
                                 for (int j = 1; j <= count; j++)
                                 {
                                     string EqNo = "TE" + tempAsset.Substring(2, 20) + string.Format("{0:D3}", j);
                                     string newEqNo = DateTime.Now.Year.ToString() + string.Format("{0:D6}", eqCount + j);
-                                    string newAssetNo = dr.ItemArray[7].ToString() + DateTime.Now.Year.ToString() + string.Format("{0:D4}", assetCount);
+                                    string newAssetNo = dr.ItemArray[8].ToString() + DateTime.Now.Year.ToString() + string.Format("{0:D4}", assetCount);
                                     if (!EqMgr.changeEqNo(EqNo, newEqNo, newAssetNo))
                                     {
                                         untCommon.InfoMsg("操作失败。");
@@ -418,8 +492,8 @@ namespace Equipment_Manager
                     for (int i = 0; i < dgvClearAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvClearAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                        string state = dr.ItemArray[12].ToString();
-                        string ID = dr.ItemArray[0].ToString();
+                        string state = dr.ItemArray[0].ToString();
+                        string ID = dr.ItemArray[1].ToString();
                         DataTable Empdt = EmployeeMgr.GetAllName();
                         switch (state)
                         {
@@ -454,8 +528,8 @@ namespace Equipment_Manager
                     for (int i = 0; i < dgvUpdateAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvUpdateAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                        string state = dr.ItemArray[11].ToString();
-                        string ID = dr.ItemArray[0].ToString();
+                        string state = dr.ItemArray[0].ToString();
+                        string ID = dr.ItemArray[1].ToString();
                         switch (state)
                         {
                             case "更新待审核":
@@ -486,63 +560,66 @@ namespace Equipment_Manager
                     this.LoadUpdateAuditData();
                     break;
             }
-
         }
-        /// <summary>
-        /// 审核不通过
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+
+        private void enterDisAgreeItem()
         {
             int suc_count = 0;
             string out_str = "";
+            frmRemark Remark = new frmRemark();
             switch (this.tabControl1.SelectedIndex)
             {
                 case 0:
-                    for (int i = 0; i < dgvAddAudit.SelectedRows.Count; i++)
+                    if (Remark.ShowDialog() == DialogResult.OK)
                     {
-                        DataRow dr = (dgvAddAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                        string state = dr.ItemArray[10].ToString();
-                        switch (state)
+                        for (int i = 0; i < dgvAddAudit.SelectedRows.Count; i++)
                         {
-                            case "新增待审核":
-                                int tempCount = EqMgr.getTempAssetCount();
-                                int allCount = EqMgr.getAllAssetCount();
-                                int eqCount = EqMgr.getAllEqCount() + 1;
-                                int assetCount = allCount - tempCount + 1;
-                                string tempAsset = dr.ItemArray[0].ToString();
-                                int count = Convert.ToInt32(tempAsset.Substring(tempAsset.Length - 3, 3));
-                                int eq_count = 0;
-                                for (int j = 1; j <= count; j++)
-                                {
-                                    string EqNo = "TE" + tempAsset.Substring(2, 20) + string.Format("{0:D3}", j);
-                                    if (!EqMgr.failChangeEqNo(EqNo))
-                                        untCommon.InfoMsg("修改失败。");
-                                    else
-                                        eq_count++;
-                                }
-                                if (eq_count == count)
-                                    suc_count++;
-                                break;
-                            default:
-                                untCommon.InfoMsg("记录状态错误。");
-                                break;
-                        }
+                            DataRow dr = (dgvAddAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
+                            string state = dr.ItemArray[0].ToString();
+                            switch (state)
+                            {
+                                case "新增待审核":
+                                    int tempCount = EqMgr.getTempAssetCount();
+                                    int allCount = EqMgr.getAllAssetCount();
+                                    int eqCount = EqMgr.getAllEqCount() + 1;
+                                    int assetCount = allCount - tempCount + 1;
+                                    string tempAsset = dr.ItemArray[1].ToString();
+                                    int count = Convert.ToInt32(tempAsset.Substring(tempAsset.Length - 3, 3));
+                                    int eq_count = 0;
+                                    for (int j = 1; j <= count; j++)
+                                    {
+                                        string EqNo = "TE" + tempAsset.Substring(2, 20) + string.Format("{0:D3}", j);
+                                        if (!EqMgr.failChangeEqNo(EqNo, Remark.TextBoxValue))
+                                            untCommon.InfoMsg("修改失败。");
+                                        else
+                                            eq_count++;
+                                    }
+                                    if (eq_count == count)
+                                        suc_count++;
+                                    break;
+                                default:
+                                    untCommon.InfoMsg("记录状态错误。");
+                                    break;
+                            }
 
-                    }
-                    if (suc_count == dgvAddAudit.SelectedRows.Count)
-                    {
-                        out_str = string.Format("操作成功{0}条资产", suc_count);
-                        untCommon.InfoMsg(out_str);
+                        }
+                        if (suc_count == dgvAddAudit.SelectedRows.Count)
+                        {
+                            out_str = string.Format("操作成功{0}条资产", suc_count);
+                            untCommon.InfoMsg(out_str);
+                        }
+                        else
+                        {
+                            out_str = string.Format("操作成功{0}条资产，操作失败{1}条资产", suc_count, dgvAddAudit.SelectedRows.Count - suc_count);
+                            untCommon.InfoMsg(out_str);
+                        }
+                        this.LoadAddAuditData();
+                        break;
                     }
                     else
                     {
-                        out_str = string.Format("操作成功{0}条资产，操作失败{1}条资产", suc_count, dgvAddAudit.SelectedRows.Count - suc_count);
-                        untCommon.InfoMsg(out_str);
+                        break;
                     }
-                    this.LoadAddAuditData();
-                    break;
                 case 3:
                     for (int i = 0; i < dgvBorrowAudit.SelectedRows.Count; i++)
                     {
@@ -622,14 +699,13 @@ namespace Equipment_Manager
                     this.LoadFixAuditData();
                     break;
                 case 1:
-                    frmRemark Remark = new frmRemark();
                     if (Remark.ShowDialog() == DialogResult.OK)
                     {
                         for (int i = 0; i < dgvClearAudit.SelectedRows.Count; i++)
                         {
                             DataRow dr = (dgvClearAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                            string state = dr.ItemArray[12].ToString();
-                            string ID = dr.ItemArray[0].ToString();
+                            string state = dr.ItemArray[0].ToString();
+                            string ID = dr.ItemArray[1].ToString();
                             DataTable Empdt = EmployeeMgr.GetAllName();
                             switch (state)
                             {
@@ -666,61 +742,63 @@ namespace Equipment_Manager
                         break;
                     }
                 case 2:
-                    for (int i = 0; i < dgvUpdateAudit.SelectedRows.Count; i++)
+                    if (Remark.ShowDialog() == DialogResult.OK)
                     {
-                        DataRow dr = (dgvUpdateAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                        string state = dr.ItemArray[11].ToString();
-                        string ID = dr.ItemArray[0].ToString();
-                        switch (state)
+                        for (int i = 0; i < dgvUpdateAudit.SelectedRows.Count; i++)
                         {
-                            case "更新待审核":
-                                if (!EqMgr.disagreeUpdateAudit(ID))
-                                {
-                                    untCommon.InfoMsg("操作失败。");
+                            DataRow dr = (dgvUpdateAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
+                            string state = dr.ItemArray[0].ToString();
+                            string ID = dr.ItemArray[1].ToString();
+                            switch (state)
+                            {
+                                case "更新待审核":
+                                    if (!EqMgr.disagreeUpdateAudit(ID, Remark.TextBoxValue))
+                                    {
+                                        untCommon.InfoMsg("操作失败。");
+                                        break;
+                                    }
+                                    else
+                                        suc_count++;
                                     break;
-                                }
-                                else
-                                    suc_count++;
-                                break;
-                            default:
-                                untCommon.InfoMsg("记录状态错误。");
-                                break;
-                        }
+                                default:
+                                    untCommon.InfoMsg("记录状态错误。");
+                                    break;
+                            }
 
-                    }
-                    if (suc_count == dgvUpdateAudit.SelectedRows.Count)
-                    {
-                        out_str = string.Format("操作成功{0}条资产", suc_count);
-                        untCommon.InfoMsg(out_str);
+                        }
+                        if (suc_count == dgvUpdateAudit.SelectedRows.Count)
+                        {
+                            out_str = string.Format("操作成功{0}条资产", suc_count);
+                            untCommon.InfoMsg(out_str);
+                        }
+                        else
+                        {
+                            out_str = string.Format("操作成功{0}条资产，操作失败{1}条资产", suc_count, dgvUpdateAudit.SelectedRows.Count - suc_count);
+                            untCommon.InfoMsg(out_str);
+                        }
+                        this.LoadUpdateAuditData();
+                        break;
                     }
                     else
                     {
-                        out_str = string.Format("操作成功{0}条资产，操作失败{1}条资产", suc_count, dgvUpdateAudit.SelectedRows.Count - suc_count);
-                        untCommon.InfoMsg(out_str);
+                        break;
                     }
-                    this.LoadUpdateAuditData();
-                    break;
             }
-
         }
-        /// <summary>
-        /// 修改信息
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ToolStripMenuRevise_Click(object sender, EventArgs e)
+
+        private void enterReviseItem()
         {
             switch (this.tabControl1.SelectedIndex)
             {
                 case 0:
                     {
                         DataRow dr = (dgvAddAudit.Rows[dgvAddAudit.CurrentRow.Index].DataBoundItem as DataRowView).Row;
-                        string ID = dr.ItemArray[0].ToString();
-                        string state = dr.ItemArray[10].ToString();
+                        string ID = dr.ItemArray[1].ToString();
+                        string state = dr.ItemArray[0].ToString();
                         switch (state)
                         {
                             case "新增审核未通过":
-                                frmEqUpdate frupdate = new frmEqUpdate(this._user, ID,this._power,3);
+                                frmEqUpdate frupdate = new frmEqUpdate(this._user, ID, this._power, 3);
                                 frupdate.ShowDialog();
                                 break;
                             default:
@@ -773,12 +851,12 @@ namespace Equipment_Manager
                 case 1:
                     {
                         DataRow dr = (dgvClearAudit.Rows[dgvClearAudit.CurrentRow.Index].DataBoundItem as DataRowView).Row;
-                        string ID = dr.ItemArray[0].ToString();
-                        string state = dr.ItemArray[12].ToString();
+                        string ID = dr.ItemArray[1].ToString();
+                        string state = dr.ItemArray[0].ToString();
                         switch (state)
                         {
                             case "注销审核未通过":
-                                frmClear clear = new frmClear(ID,false);
+                                frmClear clear = new frmClear(ID, false);
                                 clear.User = this._user;
                                 clear.ShowDialog();
                                 break;
@@ -818,7 +896,7 @@ namespace Equipment_Manager
                             }
                             if (flag)
                             {
-                                frmEqUpdate frupdate = new frmEqUpdate(this._user, EqnoList, this._power,4);
+                                frmEqUpdate frupdate = new frmEqUpdate(this._user, EqnoList, this._power, 4);
                                 if (frupdate.ShowDialog() == DialogResult.OK)
                                 {
                                     this.LoadClearAuditData();
@@ -834,12 +912,8 @@ namespace Equipment_Manager
                     }
             }
         }
-        /// <summary>
-        /// 删除信息
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ToolStripMenuDelete_Click(object sender, EventArgs e)
+
+        private void enterDeleteItem()
         {
             int suc_count = 0;
             string out_str = "";
@@ -849,8 +923,8 @@ namespace Equipment_Manager
                     for (int i = 0; i < dgvAddAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvAddAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                        string ID = dr.ItemArray[0].ToString();
-                        string state = dr.ItemArray[10].ToString();
+                        string ID = dr.ItemArray[1].ToString();
+                        string state = dr.ItemArray[0].ToString();
                         switch (state)
                         {
                             case "新增审核未通过":
@@ -956,9 +1030,9 @@ namespace Equipment_Manager
                     for (int i = 0; i < dgvClearAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvClearAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                        string ID = dr.ItemArray[0].ToString();
-                        string eqno = dr.ItemArray[1].ToString();
-                        string state = dr.ItemArray[12].ToString();
+                        string ID = dr.ItemArray[1].ToString();
+                        string eqno = dr.ItemArray[2].ToString();
+                        string state = dr.ItemArray[0].ToString();
                         switch (state)
                         {
                             case "注销审核未通过":
@@ -992,9 +1066,9 @@ namespace Equipment_Manager
                     for (int i = 0; i < dgvUpdateAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvUpdateAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                        string ID = dr.ItemArray[0].ToString();
-                        string eqno = dr.ItemArray[1].ToString();
-                        string state = dr.ItemArray[11].ToString();
+                        string ID = dr.ItemArray[1].ToString();
+                        string eqno = dr.ItemArray[2].ToString();
+                        string state = dr.ItemArray[0].ToString();
                         switch (state)
                         {
                             case "更新审核未通过":
@@ -1026,6 +1100,45 @@ namespace Equipment_Manager
                     break;
             }
         }
+
+
+        /// <summary>
+        /// 审核通过
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            enterAgreeItem();
+        }
+        /// <summary>
+        /// 审核不通过
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            enterDisAgreeItem();
+        }
+        /// <summary>
+        /// 修改信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuRevise_Click(object sender, EventArgs e)
+        {
+            enterReviseItem();
+        }
+        /// <summary>
+        /// 删除信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuDelete_Click(object sender, EventArgs e)
+        {
+            enterDeleteItem();
+        }
+
         /// <summary>
         /// 归还设备
         /// </summary>
@@ -1083,6 +1196,12 @@ namespace Equipment_Manager
             }
 
         }
+
+        #endregion
+
+        #region 右键选中
+
+
         /// <summary>
         /// 新增表格右键
         /// </summary>
@@ -1203,6 +1322,21 @@ namespace Equipment_Manager
                 }
             }
         }
+
+        #endregion
+
+        /// <summary>
+        /// 获取编号
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <param name="name"></param>
+        private string name2ID(DataTable dt, string value, string column)
+        {
+            dt.PrimaryKey = new System.Data.DataColumn[] { dt.Columns[column] };
+            System.Data.DataRow row = dt.Rows.Find(value);
+            return row.ItemArray[1].ToString();
+        }
+
         /// <summary>
         /// 页面切换
         /// </summary>
@@ -1230,81 +1364,144 @@ namespace Equipment_Manager
             }
         }
 
-        /// <summary>
-        /// 获取编号
-        /// </summary>
-        /// <param name="dt"></param>
-        /// <param name="name"></param>
-        private string name2ID(DataTable dt, string value, string column)
-        {
-            dt.PrimaryKey = new System.Data.DataColumn[] { dt.Columns[column] };
-            System.Data.DataRow row = dt.Rows.Find(value);
-            return row.ItemArray[1].ToString();
-        }
+        #region 双击
 
+        /// <summary>
+        /// 新增表格双击
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgvAddAudit_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             DataRow dr = (dgvAddAudit.Rows[e.RowIndex].DataBoundItem as DataRowView).Row;
-            string ID = dr.ItemArray[1].ToString();
+            string Asset = dr.ItemArray[1].ToString();
             string state = dr.ItemArray[0].ToString();
+            string ID = Asset.Replace('A', 'E');
+            frmEqUpdate frupdate;
             switch (state)
             {
-                case "注销审核未通过":
-                    frmClear clear = new frmClear(ID, false);
-                    clear.User = this._user;
-                    if (clear.ShowDialog() == DialogResult.OK)
-                        this.LoadClearAuditData();
-                    break;
+                case "新增审核未通过":
+                    frmRemark Remark = new frmRemark(ID,0);
+                    if (Remark.ShowDialog() == DialogResult.OK)
+                    {
+                        frupdate = new frmEqUpdate(this._user, ID, this._power, 3);
+                        if (frupdate.ShowDialog() == DialogResult.OK)
+                            this.LoadAddAuditData();
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
                 default:
-                    clear = new frmClear(ID, true);
-                    clear.User = this._user;
-                    clear.ShowDialog();
+                    frupdate = new frmEqUpdate(this._user, ID, this._power, 3);
+                    if (frupdate.ShowDialog() == DialogResult.OK)
+                        this.LoadAddAuditData();
                     break;
             }
         }
 
+        /// <summary>
+        /// 注销表格双击
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgvClearAudit_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             DataRow dr = (dgvClearAudit.Rows[e.RowIndex].DataBoundItem as DataRowView).Row;
             string ID = dr.ItemArray[1].ToString();
             string state = dr.ItemArray[0].ToString();
+            frmClear clear;
             switch (state)
             {
                 case "注销审核未通过":
-                    frmClear clear = new frmClear(ID, false);
-                    clear.User = this._user;
-                    if (clear.ShowDialog() == DialogResult.OK)
-                        this.LoadClearAuditData();
-                    break;
+                    frmRemark Remark = new frmRemark(ID,1);
+                    if (Remark.ShowDialog() == DialogResult.OK)
+                    {
+                        clear = new frmClear(ID, false);
+                        clear.User = this._user;
+                        if (clear.ShowDialog() == DialogResult.OK)
+                            this.LoadClearAuditData();
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
+
                 default:
                     clear = new frmClear(ID, true);
                     clear.User = this._user;
                     clear.ShowDialog();
                     break;
             }
-
-
         }
 
+        /// <summary>
+        /// 更新表格双击
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgvUpdateAudit_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataRow dr = (dgvClearAudit.Rows[e.RowIndex].DataBoundItem as DataRowView).Row;
+            DataRow dr = (dgvUpdateAudit.Rows[e.RowIndex].DataBoundItem as DataRowView).Row;
             string ID = dr.ItemArray[1].ToString();
             string state = dr.ItemArray[0].ToString();
+            frmRemark Remark;
+            List<string> EqnoList = new List<string>();
+            EqnoList.Add(ID);
             switch (state)
             {
-                case "注销审核未通过":
-                    frmClear clear = new frmClear(ID, false);
-                    clear.User = this._user;
-                    if (clear.ShowDialog() == DialogResult.OK)
-                        this.LoadClearAuditData();
-                    break;
+                case "更新审核未通过":
+                    {
+                        Remark = new frmRemark(ID, 2);
+                        if (Remark.ShowDialog() == DialogResult.OK)
+                        {
+                            frmEqUpdate frupdate = new frmEqUpdate(this._user, EqnoList, this._power, 4);
+                            if (frupdate.ShowDialog() == DialogResult.OK)
+                            {
+                                this.LoadUpdateAuditData();
+                            }
+                            break;
+                        }
+                        else
+                        {
+                            break;
+                        }
+
+                    }
                 default:
-                    clear = new frmClear(ID, true);
-                    clear.User = this._user;
-                    clear.ShowDialog();
-                    break;
+                    {
+                        Remark = new frmRemark(ID, 1);
+                        frmEqUpdate frupdate = new frmEqUpdate(this._user, EqnoList, this._power, 4);
+                        if (frupdate.ShowDialog() == DialogResult.OK)
+                        {
+                            this.LoadUpdateAuditData();
+                        }
+                        break;
+                    }
             }
+        }
+        #endregion 
+
+        private void accept_toolStripButton_Click(object sender, EventArgs e)
+        {
+            enterAgreeItem();
+        }
+
+        private void refuse_toolStripButton_Click(object sender, EventArgs e)
+        {
+            enterDisAgreeItem();
+        }
+
+        private void modify_toolStripButton_Click(object sender, EventArgs e)
+        {
+            enterReviseItem();
+        }
+
+        private void delete_toolStripButton_Click(object sender, EventArgs e)
+        {
+            enterDeleteItem();
         }
 
     }
