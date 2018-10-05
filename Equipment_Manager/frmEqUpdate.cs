@@ -789,7 +789,7 @@ namespace Equipment_Manager
                                     DataTable Empdt = EmployeeMgr.GetAllName();
                                     foreach (string field in eqnoList)
                                     {
-                                        eq.EqNo = "U" + this.name2ID(Empdt, this._user, "name") + DateTime.Now.ToString("yyyyMMddHHmmss") + field;
+                                        eq.EqNo = "U" + this.Loginid + DateTime.Now.ToString("yyyyMMddHHmmss") + field;
                                         eq.State = "更新待审核";
                                         if (EqMgr.Add(eq))
                                         {

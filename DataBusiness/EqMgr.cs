@@ -1051,7 +1051,7 @@ namespace DataBusiness
         public static int EqCount()
         {
             sqlHandler sh = new sqlHandler();
-            string sql = "select count(*) from Equipment";
+            string sql = "select count(*) from View_Equipment";
             DataTable dt = sh.GetData(sql);
             int result = 0;
             if (dt != null)

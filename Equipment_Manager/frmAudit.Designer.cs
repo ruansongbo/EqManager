@@ -55,6 +55,7 @@
             this.modify_toolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.delete_toolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.audit_toolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddAudit)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -287,7 +288,8 @@
             this.toolStripSeparator2,
             this.modify_toolStripButton,
             this.toolStripSeparator3,
-            this.delete_toolStripButton});
+            this.delete_toolStripButton,
+            this.audit_toolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(937, 28);
@@ -349,6 +351,16 @@
             this.delete_toolStripButton.Text = "删除提交信息";
             this.delete_toolStripButton.Click += new System.EventHandler(this.delete_toolStripButton_Click);
             // 
+            // audit_toolStripButton
+            // 
+            this.audit_toolStripButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.audit_toolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("audit_toolStripButton.Image")));
+            this.audit_toolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.audit_toolStripButton.Name = "audit_toolStripButton";
+            this.audit_toolStripButton.Size = new System.Drawing.Size(94, 25);
+            this.audit_toolStripButton.Text = "审核信息";
+            this.audit_toolStripButton.Click += new System.EventHandler(this.audit_toolStripButton_Click);
+            // 
             // frmAudit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -408,5 +420,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton audit_toolStripButton;
     }
 }

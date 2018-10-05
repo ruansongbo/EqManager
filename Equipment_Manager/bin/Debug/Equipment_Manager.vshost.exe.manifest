@@ -167,7 +167,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>64cMKpzCElpPwZ3OIjZl3u8pzaw=</dsig:DigestValue>
+        <dsig:DigestValue>CHvSZNfhM7Yymnz7O2Sx8XO798o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -196,14 +196,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Equipment_Manager.exe" size="3416064">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Equipment_Manager.exe" size="3418624">
       <assemblyIdentity name="Equipment_Manager" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>59j6sFQqtoGKWflL9+xl4hVlaMk=</dsig:DigestValue>
+        <dsig:DigestValue>tKT2x8k1tLObnuKC3qdE18jeuyk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -529,7 +529,7 @@ namespace Equipment_Manager
         {
             
             frmEqUpdate frupdate = new frmEqUpdate(this._user, EqnoList,this._power,1);
-
+            frupdate.Loginid = this._loginid;
             if (frupdate.ShowDialog() == DialogResult.OK)
             {
                 this.DataRefresh();
@@ -543,6 +543,7 @@ namespace Equipment_Manager
         private void UpdateAssetEnter(string AssetNo)
         {
             frmEqUpdate frupdate = new frmEqUpdate(this._user, AssetNo, this._power, 2);
+            frupdate.Loginid = this._loginid;
             if (frupdate.ShowDialog() == DialogResult.OK)
             {
                 this.DataRefresh();

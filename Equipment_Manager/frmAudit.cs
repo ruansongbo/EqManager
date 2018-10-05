@@ -70,6 +70,8 @@ namespace Equipment_Manager
             this.LoadClearAuditData();
             this.LoadUpdateAuditData();
         }
+
+
         #region 加载
         
 
@@ -345,6 +347,11 @@ namespace Equipment_Manager
             switch (this.tabControl1.SelectedIndex)
             {
                 case 0:
+                    if (dgvAddAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     for (int i = 0; i < dgvAddAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvAddAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
@@ -489,6 +496,11 @@ namespace Equipment_Manager
                     this.LoadFixAuditData();
                     break;
                 case 1:
+                    if (dgvClearAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     for (int i = 0; i < dgvClearAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvClearAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
@@ -525,6 +537,11 @@ namespace Equipment_Manager
                     this.LoadClearAuditData();
                     break;
                 case 2:
+                    if (dgvUpdateAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     for (int i = 0; i < dgvUpdateAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvUpdateAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
@@ -570,6 +587,11 @@ namespace Equipment_Manager
             switch (this.tabControl1.SelectedIndex)
             {
                 case 0:
+                    if (dgvAddAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     if (Remark.ShowDialog() == DialogResult.OK)
                     {
                         for (int i = 0; i < dgvAddAudit.SelectedRows.Count; i++)
@@ -699,6 +721,11 @@ namespace Equipment_Manager
                     this.LoadFixAuditData();
                     break;
                 case 1:
+                    if (dgvClearAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     if (Remark.ShowDialog() == DialogResult.OK)
                     {
                         for (int i = 0; i < dgvClearAudit.SelectedRows.Count; i++)
@@ -742,6 +769,11 @@ namespace Equipment_Manager
                         break;
                     }
                 case 2:
+                    if (dgvUpdateAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     if (Remark.ShowDialog() == DialogResult.OK)
                     {
                         for (int i = 0; i < dgvUpdateAudit.SelectedRows.Count; i++)
@@ -792,6 +824,11 @@ namespace Equipment_Manager
             {
                 case 0:
                     {
+                        if (dgvAddAudit.SelectedRows.Count == 0)
+                        {
+                            untCommon.InfoMsg("未选中数据。");
+                            return;
+                        }
                         DataRow dr = (dgvAddAudit.Rows[dgvAddAudit.CurrentRow.Index].DataBoundItem as DataRowView).Row;
                         string ID = dr.ItemArray[1].ToString();
                         string state = dr.ItemArray[0].ToString();
@@ -799,6 +836,7 @@ namespace Equipment_Manager
                         {
                             case "新增审核未通过":
                                 frmEqUpdate frupdate = new frmEqUpdate(this._user, ID, this._power, 3);
+                                frupdate.Loginid = this._loginid;
                                 frupdate.ShowDialog();
                                 break;
                             default:
@@ -850,6 +888,11 @@ namespace Equipment_Manager
                     }
                 case 1:
                     {
+                        if (dgvClearAudit.SelectedRows.Count == 0)
+                        {
+                            untCommon.InfoMsg("未选中数据。");
+                            return;
+                        }
                         DataRow dr = (dgvClearAudit.Rows[dgvClearAudit.CurrentRow.Index].DataBoundItem as DataRowView).Row;
                         string ID = dr.ItemArray[1].ToString();
                         string state = dr.ItemArray[0].ToString();
@@ -869,6 +912,11 @@ namespace Equipment_Manager
                     }
                 case 2:
                     {
+                        if (dgvUpdateAudit.SelectedRows.Count == 0)
+                        {
+                            untCommon.InfoMsg("未选中数据。");
+                            return;
+                        }
                         List<string> EqnoList = new List<string>();
                         List<string> assertList = new List<string>();
                         List<string> statusList = new List<string>();
@@ -876,9 +924,9 @@ namespace Equipment_Manager
                         for (int i = 0; i < dgvUpdateAudit.SelectedRows.Count; i++)
                         {
                             DataRow dr = (dgvUpdateAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
-                            EqnoList.Add(dr.ItemArray[0].ToString());
-                            assertList.Add(dr.ItemArray[2].ToString());
-                            statusList.Add(dr.ItemArray[11].ToString());
+                            EqnoList.Add(dr.ItemArray[1].ToString());
+                            assertList.Add(dr.ItemArray[3].ToString());
+                            statusList.Add(dr.ItemArray[0].ToString());
                         }
                         assert = assertList[0];
                         bool flag = true;
@@ -897,6 +945,7 @@ namespace Equipment_Manager
                             if (flag)
                             {
                                 frmEqUpdate frupdate = new frmEqUpdate(this._user, EqnoList, this._power, 4);
+                                frupdate.Loginid = this._loginid;
                                 if (frupdate.ShowDialog() == DialogResult.OK)
                                 {
                                     this.LoadClearAuditData();
@@ -920,6 +969,11 @@ namespace Equipment_Manager
             switch (this.tabControl1.SelectedIndex)
             {
                 case 0:
+                    if (dgvAddAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     for (int i = 0; i < dgvAddAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvAddAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
@@ -1027,6 +1081,11 @@ namespace Equipment_Manager
                     this.LoadFixAuditData();
                     break;
                 case 1:
+                    if (dgvClearAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     for (int i = 0; i < dgvClearAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvClearAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
@@ -1063,6 +1122,11 @@ namespace Equipment_Manager
                     this.LoadClearAuditData();
                     break;
                 case 2:
+                    if (dgvUpdateAudit.SelectedRows.Count == 0)
+                    {
+                        untCommon.InfoMsg("未选中数据。");
+                        return;
+                    }
                     for (int i = 0; i < dgvUpdateAudit.SelectedRows.Count; i++)
                     {
                         DataRow dr = (dgvUpdateAudit.SelectedRows[i].DataBoundItem as DataRowView).Row;
@@ -1385,6 +1449,7 @@ namespace Equipment_Manager
                     if (Remark.ShowDialog() == DialogResult.OK)
                     {
                         frupdate = new frmEqUpdate(this._user, ID, this._power, 3);
+                        frupdate.Loginid = this._loginid;
                         if (frupdate.ShowDialog() == DialogResult.OK)
                             this.LoadAddAuditData();
                         break;
@@ -1395,6 +1460,7 @@ namespace Equipment_Manager
                     }
                 default:
                     frupdate = new frmEqUpdate(this._user, ID, this._power, 3);
+                    frupdate.Loginid = this._loginid;
                     if (frupdate.ShowDialog() == DialogResult.OK)
                         this.LoadAddAuditData();
                     break;
@@ -1458,6 +1524,7 @@ namespace Equipment_Manager
                         if (Remark.ShowDialog() == DialogResult.OK)
                         {
                             frmEqUpdate frupdate = new frmEqUpdate(this._user, EqnoList, this._power, 4);
+                            frupdate.Loginid = this._loginid;
                             if (frupdate.ShowDialog() == DialogResult.OK)
                             {
                                 this.LoadUpdateAuditData();
@@ -1474,6 +1541,7 @@ namespace Equipment_Manager
                     {
                         Remark = new frmRemark(ID, 1);
                         frmEqUpdate frupdate = new frmEqUpdate(this._user, EqnoList, this._power, 4);
+                        frupdate.Loginid = this._loginid;
                         if (frupdate.ShowDialog() == DialogResult.OK)
                         {
                             this.LoadUpdateAuditData();
@@ -1502,6 +1570,79 @@ namespace Equipment_Manager
         private void delete_toolStripButton_Click(object sender, EventArgs e)
         {
             enterDeleteItem();
+        }
+
+        private void audit_toolStripButton_Click(object sender, EventArgs e)
+        {
+            switch (this.tabControl1.SelectedIndex)
+            {
+                case 0:
+                    {
+                        if (dgvAddAudit.SelectedRows.Count == 0)
+                        {
+                            untCommon.InfoMsg("未选中数据。");
+                            return;
+                        }
+                        DataRow dr = (dgvAddAudit.Rows[dgvAddAudit.CurrentRow.Index].DataBoundItem as DataRowView).Row;
+                        string ID = dr.ItemArray[1].ToString();
+                        string state = dr.ItemArray[0].ToString();
+                        switch (state)
+                        {
+                            case "新增审核未通过":
+                                frmRemark Remark = new frmRemark(ID, 0);
+                                Remark.ShowDialog();
+                                break;
+                            default:
+                                untCommon.InfoMsg("无审核信息。");
+                                break;
+                        }
+                        break;
+                    }
+                case 1:
+                    {
+                        if (dgvClearAudit.SelectedRows.Count == 0)
+                        {
+                            untCommon.InfoMsg("未选中数据。");
+                            return;
+                        }
+                        DataRow dr = (dgvClearAudit.Rows[dgvClearAudit.CurrentRow.Index].DataBoundItem as DataRowView).Row;
+                        string ID = dr.ItemArray[1].ToString();
+                        string state = dr.ItemArray[0].ToString();
+                        switch (state)
+                        {
+                            case "注销审核未通过":
+                                frmRemark Remark = new frmRemark(ID, 1);
+                                Remark.ShowDialog();
+                                break;
+                            default:
+                                untCommon.InfoMsg("无审核信息。");
+                                break;
+                        }
+                        break;
+                    }
+                case 2:
+                    {
+                        if (dgvUpdateAudit.SelectedRows.Count == 0)
+                        {
+                            untCommon.InfoMsg("未选中数据。");
+                            return;
+                        }
+                        DataRow dr = (dgvUpdateAudit.Rows[dgvUpdateAudit.CurrentRow.Index].DataBoundItem as DataRowView).Row;
+                        string ID = dr.ItemArray[1].ToString();
+                        string state = dr.ItemArray[0].ToString();
+                        switch (state)
+                        {
+                            case "更新审核未通过":
+                                frmRemark Remark = new frmRemark(ID, 2);
+                                Remark.ShowDialog();
+                                break;
+                            default:
+                                untCommon.InfoMsg("无审核信息。");
+                                break;
+                        }
+                        break;
+                    }
+            }
         }
 
     }
